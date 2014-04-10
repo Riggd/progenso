@@ -2,9 +2,9 @@
 <html>
     <head>
         {% if title %}
-        <title>{{title}} - ProgensoAG</title>
+        <title>{{title}} - Test site</title>
         {% else %}
-        <title>Welcome to ProgensoAG</title>
+        <title>Welcome to Test site</title>
         {% endif %}
     </head>
     <body>
