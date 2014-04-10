@@ -9,8 +9,9 @@
     </head>
     <body>
         <div>
-            <a href="{{ url_for('index')) }}">Home</a>
-            {% if g.user.is_authenicated() %}
+            <a href="{{ url_for('index') }}">Home</a>
+            {% if g.user.is_authenticated() %}
+            | <a href="{{ url_for('user', nickname = g.user.nickname) }}">Your Profile</a>
             | <a href="{{ url_for('logout') }}">Logout</a>
             {% endif %}
         </div>
